@@ -1,0 +1,214 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f0ec77;
+    max-width: 2000px;
+}
+
+.logo{
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: stretch;
+}
+
+.nav-container{
+    margin-top: 1em;
+    background-color: orange;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ul{
+    display: inline-block;
+    flex: 1;
+    list-style: none;
+}
+
+.nav-container a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    padding: 20px;
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-container a:hover{
+    background-color: green;
+    color: white;
+}
+
+.discount{
+    color: orange;
+    font-size: 2em;
+    padding: 2px;
+}
+
+.promotion{
+    position: relative;
+    height: 350px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.promotion h1{
+    color: white;
+    font-size: 3em;
+}
+
+.promotion div{
+    margin: 5vw;
+    color: white;
+    padding: 10px;
+}
+
+.promotion h2{
+    font-size: 2em;
+}
+
+input{
+    position: absolute;
+    bottom: 2em;
+    font-size: large;
+    background-color: green;
+    color: white;
+    padding: 1em 2em 1em 2em;
+    font-weight: bold;
+    border-radius: 1em;
+    border-color: green;
+    box-shadow: 2px 2px 4px white;
+}
+input:hover{
+    background-color: white;
+    border-color: white;
+    color: green;
+}
+
+.promo-img{
+    border-radius: 20px;
+}
+
+.service{
+    padding: 1em;
+    color: green;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card{
+    flex-shrink: 0;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2.5vw;
+    margin: 0 1.5em 2em 1.5em;
+}
+
+#card img{
+    border-radius: 5px;
+    width: 300px;
+    padding: 0;
+}
+
+#card p{
+    color: green;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#card:hover{
+    transform: scale(1.1);
+}
+
+.customers{
+    padding: 1em;
+    text-align: center;
+}
+
+.customer-head{
+    padding-bottom: 1em;
+    margin-top: 2em;
+    text-align: center;
+    color: green;
+}
+
+.customers div{
+    margin: 1em;
+    display: inline-block;
+    width: 22em;
+    padding-left: 1em;
+    border-left: 4px solid orange;
+    font-style: italic;
+}
+
+.customers p{
+    display: flex;
+}
+
+.about{
+    text-align: center;
+    padding: 1em;
+    margin-top: 10em;
+}
+.about h2{
+    padding: 1em;
+    color: green;
+}
+
+footer{
+    margin-top: 10vh;
+    display: flex;
+    background-color: green;
+}
+
+footer div{
+    color: white;
+    display: inline-block; 
+    flex: 1;
+    padding: 1em;
+}
+
+.copyright{
+    text-align: right;
+}
+
+@media (max-width: 600px){
+    .promotion h1{
+        min-width: 300px;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .promotion h2{
+        min-width: 350px;
+        /* text-align: center; */
+        font-size: 1.8em;
+    }
+    input{
+        position: absolute;
+        bottom: 1.5em;
+        font-size: 1em;
+        background-color: green;
+        color: white;
+        padding: 1em 2em 1em 2em;
+    }
+}
